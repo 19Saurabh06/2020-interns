@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title:{
+		text: "INR exchange rate against EUR "
+	},
+	axisX:{
+		valueFormatString: "DD MMM"
+	},
+	axisY: {
+		title: "INR",
+		includeZero: false,
+		scaleBreaks: {
+			autoCalculate: false
+		}
+	},
+	data: [{
+		type: "line",
+		xValueFormatString: "DD MMM",
+		color: "#F08080",
+		dataPoints: [
+			{ x: new Date(2019, 0, 1), y: 79.980},
+			{ x: new Date(2019, 0, 2), y: 79.9855},
+			{ x: new Date(2019, 0, 3), y: 79.608},
+			{ x: new Date(2019, 0, 4), y: 79.4315},
+			{ x: new Date(2019, 0, 5), y: 79.4315},
+			{ x: new Date(2019, 0, 6), y: 79.4315},
+			{ x: new Date(2019, 0, 7), y: 79.6895},
+			{ x: new Date(2019, 0, 8), y: 80.245},
+			{ x: new Date(2019, 0, 9), y: 80.6365},
+			{ x: new Date(2019, 0, 10), y: 81.2005},
+			{ x: new Date(2019, 0, 11), y: 81.3475},
+			{ x: new Date(2019, 0, 12), y: 81.3475},
+			{ x: new Date(2019, 0, 13), y: 81.3475},
+			{ x: new Date(2019, 0, 14), y: 81.2195},
+			{ x: new Date(2019, 0, 15), y: 81.231},
+			{ x: new Date(2019, 0, 16), y: 81.0055},
+			{ x: new Date(2019, 0, 17), y: 80.9765},
+			{ x: new Date(2019, 0, 18), y: 81.0875},
+			{ x: new Date(2019, 0, 19), y: 81.0875},
+			{ x: new Date(2019, 0, 20), y: 81.0875},
+			{ x: new Date(2019, 0, 21), y: 80.9335},
+			{ x: new Date(2019, 0, 22), y: 81.046},
+			{ x: new Date(2019, 0, 23), y: 81.0535},
+			{ x: new Date(2019, 0, 24), y: 80.656},
+			{ x: new Date(2019, 0, 25), y: 80.634},
+			{ x: new Date(2019, 0, 26), y: 80.634},
+			{ x: new Date(2019, 0, 27), y: 80.634},
+			{ x: new Date(2019, 0, 28), y: 81.232},
+			{ x: new Date(2019, 0, 29), y: 81.306},
+			{ x: new Date(2019, 0, 30), y: 81.351},
+			{ x: new Date(2019, 0, 31), y: 81.686}
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
